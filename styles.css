@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.logo{
+    width: 100%;
+}
+
+.logo img{
+    width: 40vw;
+    display: block;
+    margin: auto;
+    padding: 2vh 0;
+}
+
+.main-nav{
+    width: 100%;
+    height: 10vh;
+    background-color: lightgray;
+}
+
+.main-nav ul{
+    list-style: none;
+}
+
+.main-nav ul li{
+    font-size: 1.5vw;
+    padding-top: 2.8vh;
+    text-align: center;
+}
+
+.main-nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding-left: 5vw;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.homepage-blurb{
+    background-color: black;     
+    background-image: url(images/hero-image3-bw3.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    overflow: hidden;
+    opacity: 0.5;
+    align-items: center;
+}
+
+.homepage-blurb p{
+    color: white;
+    padding-left: 10vw;
+    font-size: 1.8vw;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.homepage-blurb h1{
+    color: white;
+    padding-left: 10vw;
+    font-size: 2.5;
+    font-family: 'Source Sans Pro', sans-serif, bold;
+}
+
+.blurb-div{
+    width: 60vw;
+    padding-top: 20vh;
+}
+
+.tattoo-info{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+        "tattoo-photo blurb";
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    padding-top: 4vh;
+}
+
+#tat-button{
+    grid-area: tattoo-photo;
+    position: relative;
+    margin: auto;
+}
+
+.tattoo-photo{
+    grid-area: tattoo-photo;
+    width: 100%;
+    height: 100%;
+}
+
+.blurb{
+    grid-area: blurb;
+    font-size: 1vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: lightgray;
+    text-align: center;
+    height: 100%;
+    padding: 0 5vw;
+}
+
+.piercing-info{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+        "blurb piercing-photo";
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    padding-bottom: 4vh;
+}
+
+#piercing-button{
+    grid-area: piercing-photo;
+}
+
+.piercing-photo{
+    grid-area: piercing-photo;
+    width: 100%;
+    height: 100%;    
+    opacity: 0.5;
+}
+
+.blurb{
+    grid-area: blurb;
+}
+
+.blurb h1{
+    font-size: 1.2vw;    
+    font-family: 'Source Sans Pro', sans-serif, bold;
+}
+
+.hp-button{
+    background-color: white;
+    text-align: center;
+    width: 8vw;
+    height: 5vh;
+    margin: 2vh auto;
+    font-size: 1.5vw;    
+    padding-top: 1.1vh;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.5);    
+    position: relative;
+    margin: auto;
+}
+
+.hp-button a{    
+    text-decoration: none;
+    color: darkgray;    
+    font-family: 'Source Sans Pro', sans-serif, bold;
+}
+
+.blurb-button{
+    background-color: white;
+    text-align: center;
+    width: 7vw;
+    height: 4vh;
+    margin: 2vh auto;
+    font-size: 1vw;    
+    padding-top: 1.1vh;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+}
+
+.blurb-button a{
+    text-decoration: none;
+    color: darkgray;
+}
+
+.footer{
+    width: 100%;
+    height: 15vh;
+    background-color: darkgray;
+}
+
+.navigation-container{
+    display: grid;
+    grid-template-columns: repeat(12, [col] 1fr);
+    grid-template-rows: repeat(1, [row] 1fr);
+}
+
+.logo-nav{
+    grid-column: col 5/ span 4;
+    width: 30vw;
+    height: auto;
+    grid-row: row;
+}
+
+.tattoos-nav{
+    grid-column: col 2/ span 1;
+    grid-row: row;
+}
+
+.piercings-nav{
+    grid-column: col 3/ span 1;
+    grid-row: row;
+}
+
+.prices-nav{
+    grid-column: col 4/ span 1;
+    grid-row: row;
+}
+
+.jewellery-nav{
+    grid-column: col 9/ span 1;
+    grid-row: row;
+}
+
+.hygiene-nav{
+    grid-column: col 10/ span 1;
+    grid-row: row;
+}
+
+.contact-nav{
+    grid-column: col 11/ span 1;
+    grid-row: row;
+}
+
