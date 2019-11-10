@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+/* Homepage */
 
 .logo{
     width: 100%;
@@ -17,7 +18,9 @@
 .main-nav{
     width: 100%;
     height: 10vh;
-    background-color: lightgray;
+    background-color: #707070;
+    display: grid;
+    place-items: center;
 }
 
 .main-nav ul{
@@ -26,7 +29,6 @@
 
 .main-nav ul li{
     font-size: 1.5vw;
-    padding-top: 2.8vh;
     text-align: center;
 }
 
@@ -81,24 +83,33 @@
 
 #tat-button{
     grid-area: tattoo-photo;
-    position: relative;
     margin: auto;
 }
 
 .tattoo-photo{
     grid-area: tattoo-photo;
     width: 100%;
-    height: 100%;
+    height: 100%;      
+    opacity: 0.5;
 }
 
 .blurb{
     grid-area: blurb;
     font-size: 1vw;
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: lightgray;
+    background-color:#707070;
+    color: white;
     text-align: center;
     height: 100%;
-    padding: 0 5vw;
+    padding: 0 5vw;    
+    display: grid;
+    place-items: center;
+}
+
+.contents{
+    height: 50%;
+    display: grid;
+    place-items: center;
 }
 
 .piercing-info{
@@ -139,17 +150,18 @@
     width: 8vw;
     height: 5vh;
     margin: 2vh auto;
-    font-size: 1.5vw;    
-    padding-top: 1.1vh;
+    font-size: 1.5vw;   
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgba(0,0,0,.5);    
     position: relative;
     margin: auto;
+    display: grid;
+    place-items: center;
 }
 
 .hp-button a{    
     text-decoration: none;
-    color: darkgray;    
+    color: #707070;    
     font-family: 'Source Sans Pro', sans-serif, bold;
 }
 
@@ -158,64 +170,243 @@
     text-align: center;
     width: 7vw;
     height: 4vh;
-    margin: 2vh auto;
+    margin: auto;
     font-size: 1vw;    
-    padding-top: 1.1vh;
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+    display: grid;
+    place-items: center;
 }
 
 .blurb-button a{
     text-decoration: none;
-    color: darkgray;
+    color: #707070;
 }
 
-.footer{
+.page-logo{
+    width: 100%;
+}
+
+.page-logo img{
+    width: 30%;
+    display: block;
+    margin: auto;
+    padding: 2vh 0;
+}
+
+.page-nav{
+    width: 100%;
+    height: 8vh;
+    background-color: #F5F5F5;
+    box-shadow: 0 .1vh 1.5vh #707070;
+    display: grid;
+    place-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.page-nav ul{
+    list-style: none;
+}
+
+.page-nav ul li{
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+.page-nav ul li a{
+    text-decoration: none;
+    color: #707070;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Tattoos and Piercings Page */
+
+.pages-blurb{
+    width: 100%;
+    height: 100%;
+    background-color: #E2E2E2;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.pages-blurb h1{
+    font-size: 5vh;
+    font-family: 'Source Sans Pro', sans-serif, bold;
+    padding-bottom: 2vh;
+    padding-top: 4vh;
+    color: #707070;
+}
+
+.pages-blurb p{
+    font-size: 2.5vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 5vh;    
+    color: #707070;
+}
+
+.photo-grid{
+    height: 100vh;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    overflow: scroll;    
+}
+
+.photo-grid img{
+    width: 18vw;
+    height: 18vw;
+    padding-bottom: 4vh;
+}
+
+/* Prices Page */
+
+.prices{
+    display: grid;
+    grid-template-columns: 35% 20% 35% 10%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+        "prices-r1 prices-r2 prices-r3 prices-r4";
+    width: 50vw;
+    height: 100%;
+    margin: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.5vh;
+    text-align: left;
+}
+
+.prices-r1{
+    grid-area: prices-r1;
+}
+
+.prices-r2{
+    grid-area: prices-r2;
+}
+
+.prices-r3{
+    grid-area: prices-r3;
+}
+
+.prices-r4{
+    grid-area: prices-r4;
+}
+
+.prices2{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+        "info-photo prices-r5";
+    column-gap: 2vw;
+    width: 70vw;
+    height: 100%;
+    margin: 5vh auto;
+    text-align: center;
+}
+
+.info-photo{
+    grid-area: info-photo;
+}
+
+.info-photo img{
+    width: 100%;
+}
+
+.prices-r5{
+    grid-area: prices-r5;
+    background-color: #E2E2E2;
+    width: 100%;
+    height: 100%;   
+}
+
+.prices-r5 p{ 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.5vh;
+    color: #707070;
+    padding-top: 8vh;
+}
+
+/* Jewellery Page */
+
+.jewellery-grid{
+    width: 65vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 5vh;
+    margin-bottom: 5vh;  
+}
+
+.jewellery-grid img{
+    width: 20vw;
+    height: 20vw;
+    padding-bottom: 4vh;
+}
+
+/* Hygiene Page */
+
+.hygiene-image{
+    width: 60%;
+    height: 100%;
+    margin: 4vh auto;
+}
+
+.hygiene-image img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Contact Page */
+
+.fb-icon1 img{
+    width: 3vw;
+    color: #707070;
+}
+
+/* Footer */
+
+.footer{    
     width: 100%;
     height: 15vh;
-    background-color: darkgray;
+    background-color: #707070;   
 }
 
-.navigation-container{
-    display: grid;
-    grid-template-columns: repeat(12, [col] 1fr);
-    grid-template-rows: repeat(1, [row] 1fr);
+.footer-contents{
+    padding-top: 2vh;
+    display: flex;    
+    margin: auto;
+    justify-content: center;
 }
 
-.logo-nav{
-    grid-column: col 5/ span 4;
-    width: 30vw;
-    height: auto;
-    grid-row: row;
+.footer-contents h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2vh;
+    color: white;
+    margin-right: 2vw;
 }
 
-.tattoos-nav{
-    grid-column: col 2/ span 1;
-    grid-row: row;
+.footer-contents p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2vh;
+    color: white;
+    margin-right: 3vw;
 }
 
-.piercings-nav{
-    grid-column: col 3/ span 1;
-    grid-row: row;
+.footer a{
+    text-decoration: none;
+    color: white;
 }
 
-.prices-nav{
-    grid-column: col 4/ span 1;
-    grid-row: row;
+.icons img{    
+    width: 2vw;
 }
-
-.jewellery-nav{
-    grid-column: col 9/ span 1;
-    grid-row: row;
-}
-
-.hygiene-nav{
-    grid-column: col 10/ span 1;
-    grid-row: row;
-}
-
-.contact-nav{
-    grid-column: col 11/ span 1;
-    grid-row: row;
-}
-
