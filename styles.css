@@ -1,719 +1,790 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 /* Homepage */
 
-.logo{
-    width: 100%;
+.logo {
+  width: 100%;
 }
 
-.logo img{
-    width: 40vw;
-    display: block;
-    margin: auto;
-    padding: 2vh 0;
+.logo img {
+  width: 40vw;
+  display: block;
+  margin: auto;
+  padding: 2vh 0;
 }
-
 
 .mobile-nav {
-    background-color: #707070;
-    overflow: hidden;
-    width: 100%;
-    height: 10vh;
-    background-color: #707070;    
-    display: grid;
-    place-items: center;
+  background-color: #707070;
+  overflow: hidden;
+  width: 100%;
+  height: 10vh;
+  background-color: #707070;
+  display: grid;
+  place-items: center;
 }
 
-.mobile-nav ul{
-    list-style: none;
+.mobile-nav ul {
+  list-style: none;
 }
 
-.mobile-nav ul li{
-    font-size: 1.5vw;
-    text-align: center;
+.mobile-nav ul li {
+  font-size: 1.5vw;
+  text-align: center;
 }
 
-.mobile-nav ul li a{
-    text-decoration: none;
-    color: white;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
-    font-family: 'Source Sans Pro', sans-serif;
+.mobile-nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .mobile-nav a:hover {
-    color: black;
+  color: black;
 }
 
 .mobile-nav ul li a.icon {
-    display: none;
+  display: none;
 }
 
-.homepage-blurb{
-    background-color: black;     
-    background-image: url(images/hero-image3-bw3.jpg);   
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
-    overflow: hidden;
-    opacity: 0.5;
-    align-items: center;
+.homepage-blurb {
+  background-color: black;
+  background-image: url(images/hero-image3-bw3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  overflow: hidden;
+  opacity: 0.5;
+  align-items: center;
 }
 
-.homepage-blurb p{
-    color: white;
-    padding-left: 10vw;
-    font-size: 1.8vw;
-    font-family: 'Source Sans Pro', sans-serif;
+.homepage-blurb p {
+  color: white;
+  padding-left: 10vw;
+  font-size: 1.8vw;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-.homepage-blurb h1{
-    color: white;
-    padding-left: 10vw;
-    font-size: 2.5;
-    font-family: 'Source Sans Pro', sans-serif, bold;
+.homepage-blurb h1 {
+  color: white;
+  padding-left: 10vw;
+  font-size: 2.5;
+  font-family: "Source Sans Pro", sans-serif, bold;
 }
 
-.blurb-div{
-    width: 60vw;
-    padding-top: 20vh;
+.blurb-div {
+  width: 60vw;
+  padding-top: 20vh;
 }
 
-.tattoo-info{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    grid-template-areas: 
-        "tattoo-photo blurb";
-    width: 50vw;
-    height: 50vh;
-    margin: auto;
-    padding-top: 4vh;
+.tattoo-info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "tattoo-photo blurb";
+  width: 50vw;
+  height: 50vh;
+  margin: auto;
+  padding-top: 4vh;
 }
 
-#tat-button{
-    grid-area: tattoo-photo;
-    margin: auto;
+#tat-button {
+  grid-area: tattoo-photo;
+  margin: auto;
 }
 
-.tattoo-photo{
-    grid-area: tattoo-photo;
-    width: 100%;
-    height: 100%;      
-    opacity: 0.5;
+.tattoo-photo {
+  grid-area: tattoo-photo;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
 }
 
-.blurb{
-    grid-area: blurb;
-    font-size: 1vw;
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color:#707070;
-    color: white;
-    text-align: center;
-    height: 100%;
-    padding: 0 5vw;    
-    display: grid;
-    place-items: center;
+.blurb {
+  grid-area: blurb;
+  font-size: 1vw;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #707070;
+  color: white;
+  text-align: center;
+  height: 100%;
+  padding: 0 5vw;
+  display: grid;
+  place-items: center;
 }
 
-.contents{
-    height: 50%;
-    display: grid;
-    place-items: center;
+.contents {
+  height: 50%;
+  display: grid;
+  place-items: center;
 }
 
-.piercing-info{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    grid-template-areas: 
-        "blurb piercing-photo";
-    width: 50vw;
-    height: 50vh;
-    margin: auto;
-    padding-bottom: 4vh;
+.piercing-info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "blurb piercing-photo";
+  width: 50vw;
+  height: 50vh;
+  margin: auto;
+  padding-bottom: 4vh;
 }
 
-#piercing-button{
-    grid-area: piercing-photo;
+#piercing-button {
+  grid-area: piercing-photo;
 }
 
-.piercing-photo{
-    grid-area: piercing-photo;
-    width: 100%;
-    height: 100%;    
-    opacity: 0.5;
+.piercing-photo {
+  grid-area: piercing-photo;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
 }
 
-.blurb{
-    grid-area: blurb;
+.blurb {
+  grid-area: blurb;
 }
 
-.blurb h1{
-    font-size: 1.2vw;    
-    font-family: 'Source Sans Pro', sans-serif, bold;
+.blurb h1 {
+  font-size: 1.2vw;
+  font-family: "Source Sans Pro", sans-serif, bold;
 }
 
-.hp-button{
-    background-color: white;
-    text-align: center;
-    width: 8vw;
-    height: 5vh;
-    margin: 2vh auto;
-    font-size: 1.5vw;   
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px rgba(0,0,0,.5);    
-    position: relative;
-    margin: auto;
-    display: grid;
-    place-items: center;
+.hp-button {
+  background-color: white;
+  text-align: center;
+  width: 8vw;
+  height: 5vh;
+  margin: 2vh auto;
+  font-size: 1.5vw;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin: auto;
+  display: grid;
+  place-items: center;
 }
 
-.hp-button a{    
-    text-decoration: none;
-    color: #707070;    
-    font-family: 'Source Sans Pro', sans-serif, bold;
+.hp-button a {
+  text-decoration: none;
+  color: #707070;
+  font-family: "Source Sans Pro", sans-serif, bold;
 }
 
-.blurb-button{
-    background-color: white;
-    text-align: center;
-    width: 7vw;
-    height: 4vh;
-    margin: auto;
-    font-size: 1vw;    
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px rgba(0,0,0,.5);
-    display: grid;
-    place-items: center;
+.blurb-button {
+  background-color: white;
+  text-align: center;
+  width: 7vw;
+  height: 4vh;
+  margin: auto;
+  font-size: 1vw;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
 }
 
-.blurb-button a{
-    text-decoration: none;
-    color: #707070;
+.blurb-button a {
+  text-decoration: none;
+  color: #707070;
 }
 
 /* Homepage Responsive Code */
 
-@media only screen and (max-width: 1400px){
-    .tattoo-info{
-        width: 60vw;
-    }
+@media only screen and (max-width: 1400px) {
+  .tattoo-info {
+    width: 60vw;
+  }
 
-    .piercing-info{
-        width: 60vw;
-    }
+  .piercing-info {
+    width: 60vw;
+  }
 
-    .blurb{
-        font-size: 1.5vw;
-    }
+  .blurb {
+    font-size: 1.5vw;
+  }
 
-    .blurb h1{
-        font-size: 1.8vw;
-    }
+  .blurb h1 {
+    font-size: 1.8vw;
+  }
 
-    .blurb-button{
-        font-size: 1.5vw;
-        width: 10vw;
-        height: 6vh;
-    }
+  .blurb-button {
+    font-size: 1.5vw;
+    width: 10vw;
+    height: 6vh;
+  }
 
-    .hp-button{
-        width: 10vw;
-        height: 6vh;
-        font-size: 2vw;
-    }
-
+  .hp-button {
+    width: 10vw;
+    height: 6vh;
+    font-size: 2vw;
+  }
 }
 
-@media only screen and (max-width: 1000px){
-    .tattoo-info{
-        height: 30vw;
-    }
+@media only screen and (max-width: 1000px) {
+  .tattoo-info {
+    height: 30vw;
+  }
 
-    .piercing-info{
-        height: 30vw;
-    }
+  .piercing-info {
+    height: 30vw;
+  }
 
-    .blurb-button{
-        height: 4vh;
-    }
+  .blurb-button {
+    height: 4vh;
+  }
 
-    .main-nav ul li{
-        font-size: 2vw;
-    }
+  .main-nav ul li {
+    font-size: 2vw;
+  }
 
-    .homepage-blurb{           
-        background-image: url(images/hero-image3-bw3.jpg);   
-        background-repeat: no-repeat;
-        background-size: 100vw;
-    }
+  .homepage-blurb {
+    background-image: url(images/hero-image3-bw3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+  }
 
-    .mobile-nav a{
-        font-size: 2.2vh;
-    }
+  .mobile-nav a {
+    font-size: 2.2vh;
+  }
 }
 
-@media only screen and (max-width: 800px){
-    .main-nav{
-        height: 6vh;
-    }
+@media only screen and (max-width: 800px) {
+  .main-nav {
+    height: 6vh;
+  }
 
-    .main-nav ul li{
-        font-size: 2.8vw;
-    }
+  .main-nav ul li {
+    font-size: 2.8vw;
+  }
 
-    .homepage-blurb{
-        height: 40vh;
-    }
+  .homepage-blurb {
+    height: 40vh;
+  }
 
-    .blurb-div{
-        padding-top: 4vh;
-    }
+  .blurb-div {
+    padding-top: 4vh;
+  }
 
-    .homepage-blurb p{
-        font-size: 1.8vh;
-    }
+  .homepage-blurb p {
+    font-size: 1.8vh;
+  }
 
-    .tattoo-info{
-        width: 70vw;
-        height: 45vw;
-    }
+  .tattoo-info {
+    width: 70vw;
+    height: 45vw;
+  }
 
-    .piercing-info{
-        width: 70vw;
-        height: 45vw;
-    }
+  .piercing-info {
+    width: 70vw;
+    height: 45vw;
+  }
 
-    .blurb{
-        font-size: 2.2vw;
-    }
+  .blurb {
+    font-size: 2.2vw;
+  }
 
-    .blurb p{
-        padding-bottom: 2vh;
-    }
+  .blurb p {
+    padding-bottom: 2vh;
+  }
 
-    .blurb h1{
-        font-size: 2.5vw;
-        padding-bottom: 1vh;
-    }
+  .blurb h1 {
+    font-size: 2.5vw;
+    padding-bottom: 1vh;
+  }
 
-    .mobile-nav a{
-        font-size: 2vh;
-    }
+  .mobile-nav a {
+    font-size: 2vh;
+  }
+
+  .footer {
+    height: auto;
+  }
+
+  .footer-contents {
+    width: 80%;
+  }
+
+  .footer-contents h1 {
+    font-size: 15px !important;
+  }
+
+  .footer-contents p {
+    font-size: 12px !important;
+  }
+
+  .icons {
+    height: auto;
+    width: 20%;
+  }
+
+  .icons img {
+    height: 100%;
+    width: 40% !important;
+  }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
+  .mobile-nav {
+    height: 100%;
+  }
 
-    .mobile-nav{
-        height: 100%;
-    }
+  .mobile-nav a {
+    display: none;
+    font-size: 2vh;
+    padding: 1.5vh 0;
+  }
 
-    .mobile-nav a{
-        display: none;
-        font-size: 2vh;
-        padding: 1.5vh 0;
-    }
+  .mobile-nav ul li a.icon {
+    float: right;
+    display: block;
+    font-size: 3vh;
+    color: white;
+  }
 
-    .mobile-nav ul li a.icon {
-        float: right;
-        display: block;
-        font-size: 3vh;
-        color: white;
-    }
+  .mobile-nav.responsive {
+    position: relative;
+  }
 
-    .mobile-nav.responsive {
-        position: relative;
-    }
+  .mobile-nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
-    .mobile-nav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
+  .mobile-nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 
-    .mobile-nav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
+  .homepage-blurb {
+    height: 35vh;
+  }
 
-    .homepage-blurb{
-        height: 35vh;
-    }
+  .blurb-div {
+    width: 100%;
+    padding-top: 3vh;
+  }
 
-    .blurb-div{
-        width: 100%;
-        padding-top: 3vh;
-    }
+  .blurb-div h1 {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    width: 80vw;
+  }
 
-    .blurb-div h1{        
-        padding-left: 10vw; 
-        padding-right: 10vw;
-        width: 80vw;
-    }
+  .blurb-div p {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
 
-    .blurb-div p{
-        padding-left: 10vw;        
-        padding-right: 10vw;
-    }
+  .tattoo-info {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "tattoo-photo"
+      "blurb";
+    width: 70vw;
+    height: 50vh;
+  }
 
-    .tattoo-info{   
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas: 
-            "tattoo-photo"
-            "blurb";
-        width: 70vw;
-        height: 50vh;
-    }
+  .piercing-info {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "piercing-photo"
+      "blurb";
+    width: 70vw;
+    height: 50vh;
+  }
 
-    .piercing-info{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas: 
-            "piercing-photo"
-            "blurb";
-        width: 70vw;
-        height: 50vh;
-    }
+  .contents {
+    height: 80%;
+  }
 
-    .contents{
-        height: 80%;     
-    }
+  .blurb p {
+    font-size: 2vh;
+  }
 
-    .blurb p{
-        font-size: 2vh;
-    }
+  .blurb h1 {
+    font-size: 2.5vh;
+  }
 
-    .blurb h1{
-        font-size: 2.5vh;
-    }
+  .blurb-button {
+    width: 20vw;
+    font-size: 2vh;
+  }
 
-    .blurb-button{
-        width: 20vw;
-        font-size: 2vh;
-    }
+  .hp-button {
+    width: 20vw;
+    font-size: 2vh;
+  }
+}
 
-    .hp-button{        
-        width: 20vw;
-        font-size: 2vh;
-    }
+@media only screen and (max-width: 400px) {
+  .logo img {
+    width: 50%;
+  }
+
+  .blurb-div {
+    padding-bottom: 3vh;
+  }
+
+  .blurb-div h1 {
+    font-size: 20px;
+  }
+
+  .blurb-div p {
+    font-size: 12px;
+  }
+
+  .mobile-nav {
+    height: 80%;
+  }
+
+  .footer-contents {
+    width: 80% !important;
+  }
+
+  .footer-contents h1 {
+    font-size: 10px !important;
+  }
+
+  .footer-contents p {
+    font-size: 8px !important;
+  }
+
+  .icons {
+    width: auto !important;
+  }
+
+  .pages-blurb h1 {
+    font-size: 20px !important;
+  }
+
+  .pages-blurb p {
+    font-size: 14px !important;
+  }
+
+  .prices-contents p {
+    font-size: 16px !important;
+  }
+
+  .page-logo img {
+    width: 40% !important;
+  }
 }
 
 /* Navigation on all pages */
 
-.page-logo{
-    width: 100%;
+.page-logo {
+  width: 100%;
 }
 
-.page-logo img{
-    width: 30%;
-    display: block;
-    margin: auto;
-    padding: 2vh 0;
+.page-logo img {
+  width: 30%;
+  display: block;
+  margin: auto;
+  padding: 2vh 0;
 }
 
 /* Tattoos and Piercings Page */
 
-.pages-blurb{
-    width: 100%;
-    height: 100%;
-    background-color: #E2E2E2;
-    text-align: center;
+.pages-blurb {
+  width: 100%;
+  height: 100%;
+  background-color: #e2e2e2;
+  text-align: center;
 }
 
-.pages-blurb-contents{
-    width: 80%;
-    margin: auto;
+.pages-blurb-contents {
+  width: 80%;
+  margin: auto;
 }
 
-.pages-blurb h1{
-    font-size: 5vh;
-    font-family: 'Source Sans Pro', sans-serif, bold;
-    padding-bottom: 2vh;
-    padding-top: 4vh;
-    color: #707070;
+.pages-blurb h1 {
+  font-size: 5vh;
+  font-family: "Source Sans Pro", sans-serif, bold;
+  padding-bottom: 2vh;
+  padding-top: 4vh;
+  color: #707070;
 }
 
-.pages-blurb p{
-    font-size: 2.5vh;
-    font-family: 'Source Sans Pro', sans-serif;
-    padding-bottom: 5vh;    
-    color: #707070;
+.pages-blurb p {
+  font-size: 2.5vh;
+  font-family: "Source Sans Pro", sans-serif;
+  padding-bottom: 5vh;
+  color: #707070;
 }
 
-.photo-grid{
-    height: 100vh;
-    width: 80vw;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    overflow: scroll;    
+.photo-grid {
+  height: 100vh;
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  overflow: scroll;
 }
 
-.photo-grid img{
-    width: 18vw;
-    height: 18vw;
-    padding-bottom: 4vh;
+.photo-grid img {
+  width: 18vw;
+  height: 18vw;
+  padding-bottom: 4vh;
 }
 
 /* Tattoo and Piercing Responsive */
 
-@media only screen and (max-width: 1400px){
-    .photo-grid{
-        height: 60vh;
-    }
+@media only screen and (max-width: 1400px) {
+  .photo-grid {
+    height: 60vh;
+  }
 
-    .photo-grid img{
-        padding-bottom: 2vh;
-    }    
+  .photo-grid img {
+    padding-bottom: 2vh;
+  }
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) {
+  .photo-grid {
+    height: 40vh;
+  }
+  .photo-grid img {
+    width: 25vw;
+    height: 25vw;
+    padding-bottom: 2vh;
+  }
 
-    .photo-grid{
-        height: 40vh;
-    }
-    .photo-grid img{
-        width: 25vw;
-        height: 25vw;
-        padding-bottom: 2vh;
-    }
-
-    .pages-blurb h1{
-        font-size: 4vh;
-    }
+  .pages-blurb h1 {
+    font-size: 4vh;
+  }
 }
 
-@media only screen and (max-width: 800px){
-    .pages-blurb h1{
-        font-size: 3vh;
-    }
-
+@media only screen and (max-width: 800px) {
+  .pages-blurb h1 {
+    font-size: 3vh;
+  }
 }
 
-@media only screen and (max-width: 600px){
-    .photo-grid{
-        width: 75vw;
-    }
+@media only screen and (max-width: 600px) {
+  .photo-grid {
+    width: 75vw;
+  }
 
-    .photo-grid img{
-        width: 35vw;
-        height: 35vw;
-        padding-bottom: 2vh;
-    }
+  .photo-grid img {
+    width: 35vw;
+    height: 35vw;
+    padding-bottom: 2vh;
+  }
 }
 
 /* Prices Page */
 
-.prices{
-    display: grid;
-    grid-template-columns: 35% 20% 35% 10%;
-    grid-template-rows: 100%;
-    grid-template-areas: 
-        "prices-r1 prices-r2 prices-r3 prices-r4";
-    width: 50vw;
-    height: 100%;
-    margin: auto;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2.5vh;
-    text-align: left;
+.prices {
+  display: grid;
+  grid-template-columns: 35% 20% 35% 10%;
+  grid-template-rows: 100%;
+  grid-template-areas: "prices-r1 prices-r2 prices-r3 prices-r4";
+  width: 50vw;
+  height: 100%;
+  margin: auto;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.5vh;
+  text-align: left;
 }
 
-.prices-r1{
-    grid-area: prices-r1;
+.prices-r1 {
+  grid-area: prices-r1;
 }
 
-.prices-r2{
-    grid-area: prices-r2;
+.prices-r2 {
+  grid-area: prices-r2;
 }
 
-.prices-r3{
-    grid-area: prices-r3;
+.prices-r3 {
+  grid-area: prices-r3;
 }
 
-.prices-r4{
-    grid-area: prices-r4;
+.prices-r4 {
+  grid-area: prices-r4;
 }
 
-.prices2{
-    display: grid;
-    place-items: center;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 100%;
-    grid-template-areas: 
-        "info-photo prices-r5";
-    column-gap: 2vw;
-    width: 70vw;
-    height: 100%;
-    margin: 5vh auto;
-    text-align: center;
+.prices2 {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 100%;
+  grid-template-areas: "info-photo prices-r5";
+  column-gap: 2vw;
+  width: 70vw;
+  height: 100%;
+  margin: 5vh auto;
+  text-align: center;
 }
 
-.info-photo{
-    grid-area: info-photo;
+.info-photo {
+  grid-area: info-photo;
 }
 
-.info-photo img{
-    width: 100%;
+.info-photo img {
+  width: 100%;
 }
 
-.prices-r5{
-    grid-area: prices-r5;
-    background-color: #E2E2E2;
-    width: 100%;
-    height: 100%;   
+.prices-r5 {
+  grid-area: prices-r5;
+  background-color: #e2e2e2;
+  width: 100%;
+  height: 100%;
 }
 
-.prices-r5 p{ 
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2.5vh;
-    color: #707070;
-    padding-top: 8vh;
+.prices-r5 p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.5vh;
+  color: #707070;
+  padding-top: 8vh;
 }
 
 /* Tattoo and Piercing Responsive */
 
-@media only screen and (max-width: 1400px){
-    .prices{
-        width: 70vw;
-    }
+@media only screen and (max-width: 1400px) {
+  .prices {
+    width: 70vw;
+  }
 }
 
-@media only screen and (max-width: 1000px){
-    .prices{
-        width: 80vw;
-    }
+@media only screen and (max-width: 1000px) {
+  .prices {
+    width: 80vw;
+  }
 }
 
-@media only screen and (max-width: 800px){
-    .prices{
-        display: grid;
-        grid-template-columns: 75% 25%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas: 
-        "prices-r1 prices-r2"
-        "prices-r3 prices-r4";
-        width: 50vw;
-    }
+@media only screen and (max-width: 800px) {
+  .prices {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "prices-r1 prices-r2"
+      "prices-r3 prices-r4";
+    width: 50vw;
+  }
 
-    .prices2{
-        height: 60vh;
-    }
+  .prices2 {
+    height: 60vh;
+  }
 
-    .prices-r5 p{
-        padding-top: 3vh;
-    }
+  .prices-r5 p {
+    padding-top: 3vh;
+  }
 
-    .prices-contents{
-        height: 80%;
-    }
+  .prices-contents {
+    height: 80%;
+  }
 }
 
-@media only screen and (max-width: 600px){
-    .prices2{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        height: 100%;
-        margin: 2vh auto;
-    }
-    
-    .prices-contents{
-        padding-bottom: 4vh;
-    }
+@media only screen and (max-width: 600px) {
+  .prices2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    margin: 2vh auto;
+  }
+
+  .prices-contents {
+    padding-bottom: 4vh;
+  }
 }
 
-@media only screen and (max-width: 400px){
-    .prices{
-        width: 70vw;
-    }
+@media only screen and (max-width: 400px) {
+  .prices {
+    width: 70vw;
+  }
 }
-
 
 /* Jewellery Page */
 
-.jewellery-grid{
-    width: 65vw;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 5vh;
-    margin-bottom: 5vh;  
+.jewellery-grid {
+  width: 65vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
-.jewellery-grid img{
-    width: 20vw;
-    height: 20vw;
-    padding-bottom: 4vh;
+.jewellery-grid img {
+  width: 20vw;
+  height: 20vw;
+  padding-bottom: 4vh;
 }
 
 /* Hygiene Page */
 
-.hygiene-image{
-    width: 60%;
-    height: 100%;
-    margin: 4vh auto;
+.hygiene-image {
+  width: 60%;
+  height: 100%;
+  margin: 4vh auto;
 }
 
-.hygiene-image img{
-    width: 100%;
-    height: 100%;
+.hygiene-image img {
+  width: 100%;
+  height: 100%;
 }
 
 /* Contact Page */
 
-.fb-icon1 img{
-    width: 3vw;
-    color: #707070;
+.fb-icon1 img {
+  width: 3vw;
+  color: #707070;
 }
 
 /* Footer */
 
-.footer{    
-    width: 100%;
-    height: 15vh;
-    background-color: #707070;   
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #707070;
 }
 
-.footer-contents{
-    padding-top: 2vh;
-    display: flex;    
-    margin: auto;
-    justify-content: center;
+.footer-contents {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
 }
 
-.footer-contents h1{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2vh;
-    color: white;
-    margin-right: 2vw;
+.footer-contents h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2vh;
+  color: white;
+  margin-right: 2vw;
 }
 
-.footer-contents p{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2vh;
-    color: white;
-    margin-right: 3vw;
+.footer-contents p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2vh;
+  color: white;
+  margin-right: 3vw;
 }
 
-.footer a{
-    text-decoration: none;
-    color: white;
+.footer a {
+  text-decoration: none;
+  color: white;
 }
 
-.icons img{    
-    width: 2vw;
+.icons img {
+  width: 2vw;
 }
